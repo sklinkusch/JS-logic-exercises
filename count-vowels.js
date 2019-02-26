@@ -10,3 +10,10 @@ console.log(
 console.log("fbw12: " + countVowels("fbw12"));
 console.log("queueing: " + countVowels("queueing"));
 console.log("mom: " + countVowels("mom"));
+
+// Ninja function
+/*
+const countVowels = (str) => {
+  str.match(/[aeiou]/gi) == null ? 0 : str.match(/[aeiou]/gi).length;
+}
+*/
