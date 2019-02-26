@@ -1,15 +1,5 @@
 function countVowels(string) {
-  return string.split("").filter(letter => {
-    if (
-      letter.includes("a") ||
-      letter.includes("e") ||
-      letter.includes("i") ||
-      letter.includes("o") ||
-      letter.includes("u")
-    ) {
-      return letter;
-    }
-  }).length;
+  return string.split("").filter(letter => "aeiou".includes(letter)).length;
 }
 
 console.log("abc: " + countVowels("abc"));
