@@ -28,7 +28,6 @@ class CountryCodes {
     this._number = newValue;
   }
   viewData(array) {
-    console.log(array);
     const output = array
       .map(country => {
         return `${this.number}: ${country.name}`;
