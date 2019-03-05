@@ -28,9 +28,10 @@ class CountryCodes {
     this._number = newValue;
   }
   viewData(array) {
+    console.log(array);
     const output = array
       .map(country => {
-        return country.name;
+        return `${this.number}: ${country.name}`;
       })
       .join("<br>");
     this.container.innerHTML = output;
